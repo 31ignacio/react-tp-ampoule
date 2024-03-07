@@ -1,0 +1,35 @@
+.single_ampoule_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.ampoule_item {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  padding: 0.3rem;
+}
+
+.ampoule_item.light {
+  background-color: green;
+  border: 1px solid green;
+}
+.ampoule_item.dark {
+  background-color: red;
+  border: 1px solid red;
+}
+
+.ampoule_item.light::after {
+  content: "*";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
